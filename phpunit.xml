@@ -1,0 +1,11 @@
+<phpunit colors="false" verbose="true">
+  <testsuites>
+    <testsuite name="My Test">
+      <directory></directory>
+    </testsuite>
+  </testsuites>
+
+  <listeners>
+    <listener class="PHPUnit_Util_Log_JSON"></listener>
+  </listeners>
+</phpunit>
