@@ -2,5 +2,3 @@ language: php
 
 php:
   - 5.3
-
-script: build.sh
