@@ -38,6 +38,6 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase
 	public function testFizzBuzz()
 	{
 	    $actual = FizzBuzz::getResult();
-		$this->assertEquals('FizzBuzz', $actaul[15]);
+		$this->assertEquals('FizzBuzz', $actual[15]);
 	}
 }
