@@ -21,19 +21,19 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase
             $this->assertEquals($expected, $actual);
 		}
     }
-
-	public function testBuzz()
-	{
-		$actual = FizzBuzz::getResult();
-		$this->assertEquals('Buzz', $actual[5]);
-	}
-
+	
 	public function testFizz()
 	{
 	    $actual = FizzBuzz::getResult();
 		$this->assertEquals('Fizz', $actual[3]);
 	}
-
+	
+	public function testBuzz()
+	{
+		$actual = FizzBuzz::getResult();
+		$this->assertEquals('Buzz', $actual[5]);
+	}
+	
 	public function testFizzBuzz()
 	{
 	    $actual = FizzBuzz::getResult();
