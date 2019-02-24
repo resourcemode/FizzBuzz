@@ -1,8 +1,9 @@
 <?php
+
 class FizzBuzzTest extends PHPUnit_Framework_TestCase
 {
     protected $number = 100;
-	protected $fizzBuzz;
+    protected $fizzBuzz;
 
     public function setUp()
     {
@@ -11,32 +12,32 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase
 
     public function testIsNumber()
     {
-	    if (is_numeric($this->number)) {
+        if (is_numeric($this->number)) {
             $expected = $this->number;
             $actual = FizzBuzz::isNumber($this->number);
             $this->assertEquals($expected, $actual);
-		} else {
+        } else {
             $expected = 'Parameter is not a number';
-            $actual = FizzBuzz::isNumber($param);
+            $actual = FizzBuzz::isNumber();
             $this->assertEquals($expected, $actual);
-		}
+        }
     }
-	
-	public function testFizz()
-	{
-	    $actual = FizzBuzz::getResult();
-		$this->assertEquals('Fizz', $actual[3]);
-	}
-	
-	public function testBuzz()
-	{
-		$actual = FizzBuzz::getResult();
-		$this->assertEquals('Buzz', $actual[5]);
-	}
-	
-	public function testFizzBuzz()
-	{
-	    $actual = FizzBuzz::getResult();
-		$this->assertEquals('FizzBuzz', $actual[15]);
-	}
+
+    public function testFizz()
+    {
+        $actual = FizzBuzz::getResult();
+        $this->assertEquals('Fizz', $actual[3]);
+    }
+
+    public function testBuzz()
+    {
+        $actual = FizzBuzz::getResult();
+        $this->assertEquals('Buzz', $actual[5]);
+    }
+
+    public function testFizzBuzz()
+    {
+        $actual = FizzBuzz::getResult();
+        $this->assertEquals('FizzBuzz', $actual[15]);
+    }
 }
