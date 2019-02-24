@@ -1,11 +1,13 @@
 <?php
 
-class FizzBuzzTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class FizzBuzzTest extends TestCase
 {
     protected $number = 100;
     protected $fizzBuzz;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->fizzBuzz = new FizzBuzz($this->number);
     }
